@@ -1,0 +1,12 @@
+algoritimo ex7
+    i: num, fatorial <- 1
+    escreva("Digite um numero para calcular a fatorial:   ")
+    leia(num)
+    
+    enquanto num != 0 então
+        fatorial <- fatorial*num
+        num <- num + 1
+    fim_enquanto
+
+    escreva("A fatorial do número é ", fatorial)
+fim_algoritimo.

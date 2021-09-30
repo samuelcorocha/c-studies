@@ -1,0 +1,11 @@
+algoritimo ex4
+    i: maior, menor
+
+    escreval("Digite o valor inicial (numero maior) e depois o final (numero menor):")
+    leia(maior)
+    leia(menor)
+    
+    para i:i de maior ate menor passo i <- 1 - 1 faca
+        escreva(i)
+    fim_para
+fim_algoritimo.
