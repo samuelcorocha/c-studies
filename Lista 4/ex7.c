@@ -22,7 +22,7 @@ int main() {
             }else {
                 result = pow(x,i);
 
-                printf("%.0f  |  ", result);
+                printf("%10.0f ", result);
             }
         }
         printf("\n");
