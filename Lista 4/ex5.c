@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <math.h>
 #include <time.h>
  
 int main() {
@@ -21,13 +22,11 @@ int main() {
         xp = rand() % 10;
         yp = rand() % 10;
 
-        distancia = (x - xp) + (y - yp);
+        distancia = fabs(x - xp) + fabs(y - yp);
 
-        if(distancia < 0)
-            distancia = distancia*(-1);
-            soma += distancia;
+        soma += distancia;
             
-            printf("A distancia do ponto (%d,%d) para o ponto (%d,%d) é de %d\n", x, y, xp, yp, distancia);
+        printf("A distancia do ponto (%d,%d) para o ponto (%d,%d) é de %d\n", x, y, xp, yp, distancia);
     }
     
     printf("A soma das distancias é %d", soma);

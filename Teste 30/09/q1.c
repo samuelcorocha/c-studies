@@ -6,7 +6,7 @@
 double massa, massaInicial=0;
 int  count = 0, h, min, s, resto;
 
-int calcularHora(seg){  //Transformando os segundos totais em horas, minutos e segundos
+void calcularHora(seg){  //Transformando os segundos totais em horas, minutos e segundos
     h = seg / 3600;
     resto = seg % 3600;
     min = resto / 60;
